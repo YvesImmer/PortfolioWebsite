@@ -1,7 +1,7 @@
 mixin project(title, description, image_src)
     .project.d-flex 
-        .d-flex.flex-column
-            img.p-2(src=image_src)
-        .d-flex.flex-column
-            h2.p-2= title 
-            p.p-2= description 
+        .d-flex.flex-column.p-2
+            img(src=image_src)
+        .d-flex.flex-column.p-8
+            h2= title 
+            p= description 

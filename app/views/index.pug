@@ -2,16 +2,17 @@ extends layout
 
 
 block body-content
-  // Header
-  header#header
-    include includes/profile
+  div.d-flex.flex-column.align-items-center
+    // Header
+    header#header
+      include includes/profile
 
-  //projects
-  include includes/projects
-  // Signup Form
-  include includes/contact 
-  // Footer
-  include includes/footer
+    //projects
+    include includes/projects
+    // Signup Form
+    include includes/contact 
+    // Footer
+    include includes/footer
 
-  // Scripts
-  script(src='/assets/js/main.js')
+    // Scripts
+    script(src='/assets/js/main.js')
