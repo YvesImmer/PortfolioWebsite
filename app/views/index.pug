@@ -2,22 +2,26 @@ extends layout
 
 
 block body-content
-  div.d-flex.flex-column.align-items-center
-    // Header
-    header#header
-      .flex-row
-        include includes/profile
+  div.d-flex.flex-column.align-items-center.h-100.justify-content-center
+    .row
+      .col-2.align-items-center
+        .ul 
+          .li
+            p foo 
+          .li 
+            p bar
 
-    //projects
-    .flex-row
-      include includes/projects
-    // Signup Form
-    .flex-row
-      include includes/contact 
-    // Footer
-    .flex-row
-      include includes/footer
+      .col-8
+        // Header
+        header#header
+          include includes/profile
 
-    // Scripts
-    .flex-row
+        //projects
+        include includes/projects
+        // Signup Form
+        include includes/contact 
+        // Footer
+        include includes/footer
+
+      // Scripts
       script(src='/assets/js/main.js')
