@@ -1,0 +1,14 @@
+@import url('https://getbootstrap.com/docs/4.4/dist/css/bootstrap.min.css');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+ul.icons{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul.icons li{
+    float: left;
+}
