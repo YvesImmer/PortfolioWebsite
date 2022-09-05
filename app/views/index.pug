@@ -5,14 +5,19 @@ block body-content
   div.d-flex.flex-column.align-items-center
     // Header
     header#header
-      include includes/profile
+      .flex-row
+        include includes/profile
 
     //projects
-    include includes/projects
+    .flex-row
+      include includes/projects
     // Signup Form
-    include includes/contact 
+    .flex-row
+      include includes/contact 
     // Footer
-    include includes/footer
+    .flex-row
+      include includes/footer
 
     // Scripts
-    script(src='/assets/js/main.js')
+    .flex-row
+      script(src='/assets/js/main.js')

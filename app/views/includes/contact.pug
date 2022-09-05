@@ -1,5 +1,7 @@
-form.contact-form(method='post' action='#')
-    input#email.form-row(type='email' name='email' placeholder='Contact Email')
-    input#subject.form-row(type='text' name='subject' placeholder='Subject')
-    input#content.form-row(type='text' name='content' placeholder='Enter text')
-    input(type='submit' value='Sign Up')
+div
+    h3.align-self-center Kontakt
+    form.contact-form(method='post' action='#')
+        input#email.form-row(type='email' name='email' placeholder='Contact Email')
+        input#subject.form-row(type='text' name='subject' placeholder='Subject')
+        textarea#content.form-row(type='text' name='content' placeholder='Enter text')
+        input(type='submit' value='Sign Up')

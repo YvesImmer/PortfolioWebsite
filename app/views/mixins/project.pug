@@ -1,7 +1,7 @@
 mixin project(title, description, image_src)
-    .project.d-flex 
-        .d-flex.flex-column.p-2
-            img(src=image_src)
-        .d-flex.flex-column.p-8
-            h2= title 
+    .project.d-flex
+        .d-flex.flex-column.col-4
+            img.img-fluid.rounded-circle(src=image_src)
+        .d-flex.flex-column.col-8
+            h4.align-self-center= title 
             p= description 
