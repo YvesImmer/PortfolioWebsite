@@ -1,7 +1,8 @@
-div
-    h3.align-self-center Kontakt
-    form.contact-form(method='post' action='#')
-        input#email.form-row(type='email' name='email' placeholder='Contact Email')
-        input#subject.form-row(type='text' name='subject' placeholder='Subject')
-        textarea#content.form-row(type='text' name='content' placeholder='Enter text')
-        input(type='submit' value='Sign Up')
+div.justify-content-around
+    h3.align-self-center(id="contact") Kontakt
+    form.contact-form(method='post' action='send' id="contact_form" enctype = "multipart/form-data")
+        input#name.from-row(type="text" name="name" required)
+        input#email.form-row(type='email' name='email' placeholder='Contact Email' required)
+        input#subject.form-row(type='text' name='subject' placeholder='Subject' required)
+        textarea#content.form-row(type='text' name='content' placeholder='Enter text' required)
+        input.button(type='submit' value="submit")

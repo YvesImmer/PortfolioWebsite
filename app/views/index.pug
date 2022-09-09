@@ -5,23 +5,23 @@ block body-content
   div.d-flex.flex-column.align-items-center.h-100.justify-content-center
     .row
       .col-2.align-items-center
-        .ul 
-          .li
-            p foo 
-          .li 
-            p bar
-
-      .col-8
+        include includes/navigation            
+      .col-8.pt-5
         // Header
         header#header
           include includes/profile
-
+        // Gutter
+        .row.p-3
         //projects
         include includes/projects
+        //Gutter
+        .row.p-3
         // Signup Form
         include includes/contact 
+        //Gutter
+        .row.p-3
         // Footer
         include includes/footer
 
       // Scripts
-      script(src='/assets/js/main.js')
+      script(src='/assets/js/submit.js')
